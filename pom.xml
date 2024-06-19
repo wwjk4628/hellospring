@@ -6,6 +6,11 @@
   <packaging>war</packaging>
   <name>Hello Spriing</name>
   <description>나의 첫번째 Spring MVC Project</description>
+  <!-- 프로퍼티 -->
+  <properties>
+	<springframework-version>6.1.9</springframework-version>
+  </properties>
+  
   <!-- 프로젝트 빌드 관련 정보 -->
   <build>
     <plugins>
@@ -25,6 +30,26 @@
   
   <!-- 의존성 관리 -->
   <dependencies>
+	<!-- Spring Context -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-context</artifactId>
+	    <version>${springframework-version}</version>
+	</dependency>
 	
+	<!-- Spring Web -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-web</artifactId>
+	    <version>${springframework-version}</version>
+	</dependency>
+	
+	<!-- Spring Web MVC -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-webmvc</artifactId>
+	    <version>${springframework-version}</version>
+	</dependency>
+
   </dependencies>
 </project>
